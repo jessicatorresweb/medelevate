@@ -19,7 +19,7 @@ const CTA = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white hover:bg-white/20 border-2 text-lg px-8 py-6"
+              className="border-white text-medelevate-dark hover:bg-white hover:text-medelevate-primary border-2 text-lg px-8 py-6 transition-colors"
             >
               Request Information <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
