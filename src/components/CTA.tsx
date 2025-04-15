@@ -14,7 +14,7 @@ const CTA = () => {
             Schedule a free consultation with our healthcare optimization experts to discover how MedElevate Solutions can help your organization thrive.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-medelevate-primary hover:bg-medelevate-light text-lg px-8 py-6">
+            <Button className="bg-medelevate-dark text-white hover:bg-medelevate-dark/90 text-lg px-8 py-6">
               Schedule Consultation
             </Button>
             <Button 
