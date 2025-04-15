@@ -5,12 +5,12 @@ import { Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "MedElevate Solutions transformed our EHR workflow and reduced documentation time by 35%. Their expertise in healthcare operations is unmatched.",
-      name: "Dr. Sarah Johnson",
-      title: "Chief Medical Officer, Regional Medical Center"
+      quote: "Partnering with MedElevate Solutions has been a game-changer for our ASC operations. Their comprehensive approach to streamlining all ambulatory surgery center (ASC) processes—from scheduling and billing to compliance and reporting— significantly improved our workflow efficiency.",
+      name: "T. Parent, MD",
+      title: "Owner, Total Back Care Center"
     },
     {
-      quote: "Their accreditation alignment services helped us achieve Joint Commission compliance with minimal disruption to our daily operations.",
+      quote: "Their platform has helped us reduce administrative overhead, improve patient throughput, and ultimately maximize our profitability. MedElevate is  a strategic partner for success.",
       name: "Mark Thompson",
       title: "Director of Quality, Community Health System"
     },
