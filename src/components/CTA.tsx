@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -13,17 +12,7 @@ const CTA = () => {
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Schedule a free consultation with our healthcare optimization experts to discover how MedElevate Solutions can help your organization thrive.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-medelevate-dark text-white hover:bg-medelevate-dark/90 text-lg px-8 py-6">
-              Schedule Consultation
-            </Button>
-            <Button 
-              variant="outline" 
-              className="border-medelevate-dark text-medelevate-dark hover:text-[#33C3F0] text-lg px-8 py-6"
-            >
-              Request Information <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
+          {/* Buttons removed as requested */}
         </div>
       </div>
     </div>
