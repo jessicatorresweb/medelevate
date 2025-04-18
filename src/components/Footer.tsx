@@ -22,12 +22,12 @@ const Footer = () => {
           
           <div>
             <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Services</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-gray-300">
               <li>Accreditation Alignment</li>
-              <li><a href="#" className="text-gray-300 hover:text-white">EHR Streamlining</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Credentialing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Best Practices</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Compliance Consulting</a></li>
+              <li>EHR Streamlining</li>
+              <li>Credentialing</li>
+              <li>Best Practices</li>
+              <li>Compliance Consulting</li>
             </ul>
           </div>
           
