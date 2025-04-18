@@ -5,6 +5,14 @@ import { useState, useEffect } from "react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  const openConsultationForm = () => {
+    window.open(
+      'https://form.jotform.com/251076529160152',
+      'blank',
+      'scrollbars=yes,toolbar=no,width=700,height=500'
+    );
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -39,7 +47,7 @@ const Navbar = () => {
             <a href="#services" className="text-gray-600 hover:text-medelevate-primary font-medium transition-colors">Services</a>
             <a href="#benefits" className="text-gray-600 hover:text-medelevate-primary font-medium transition-colors">Benefits</a>
             <a href="#about" className="text-gray-600 hover:text-medelevate-primary font-medium transition-colors">About Us</a>
-            <Button className="bg-medelevate-primary hover:bg-medelevate-secondary text-white">
+            <Button onClick={openConsultationForm} className="bg-medelevate-primary hover:bg-medelevate-secondary text-white">
               Contact Us
             </Button>
           </div>
