@@ -3,6 +3,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const openConsultationForm = () => {
+    window.open(
+      'https://form.jotform.com/251076529160152',
+      'blank',
+      'scrollbars=yes,toolbar=no,width=700,height=500'
+    );
+  };
+
   return (
     <div className="relative bg-gradient-to-br from-white to-medelevate-light pt-28 pb-20 md:pt-32 md:pb-32">
       <div className="container mx-auto px-4 md:px-6">
@@ -15,7 +23,10 @@ const Hero = () => {
               Expert healthcare consulting designed to streamline processes, improve patient care, and ensure compliance while maximizing operational efficiency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-medelevate-primary hover:bg-medelevate-secondary text-white text-lg py-6 px-8">
+              <Button 
+                className="bg-medelevate-primary hover:bg-medelevate-secondary text-white text-lg py-6 px-8"
+                onClick={openConsultationForm}
+              >
                 Schedule a Consultation
               </Button>
               <Button variant="outline" className="border-medelevate-primary text-medelevate-primary hover:bg-medelevate-light py-6 px-8 text-lg">
