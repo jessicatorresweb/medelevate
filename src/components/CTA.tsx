@@ -1,6 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import ContactForm from "./ContactForm";
 
 const CTA = () => {
   return (
@@ -17,12 +24,22 @@ const CTA = () => {
             <Button className="bg-medelevate-dark text-white hover:bg-medelevate-dark/90 text-lg px-8 py-6">
               Schedule Consultation
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-medelevate-dark text-medelevate-dark hover:text-[#33C3F0] text-lg px-8 py-6"
-            >
-              Request Information <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  className="border-medelevate-dark text-medelevate-dark hover:text-[#33C3F0] text-lg px-8 py-6"
+                >
+                  Request Information <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[500px]">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-medelevate-dark">Request Information</DialogTitle>
+                </DialogHeader>
+                <ContactForm />
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>
