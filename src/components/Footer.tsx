@@ -45,11 +45,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 text-medelevate-accent flex-shrink-0" />
-                <span>(239) 438-6667</span>
+                <a href="tel:+12394386667">(239) 438-6667</a>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-medelevate-accent flex-shrink-0" />
-                <span>admin@medelevatesolutions.com</span>
+                <a href="mailto:admin@medelevatesolutions.com">admin@medelevatesolutions.com</a>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-medelevate-accent flex-shrink-0" />
