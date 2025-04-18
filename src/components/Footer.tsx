@@ -14,17 +14,8 @@ const Footer = () => {
               Healthcare consulting dedicated to optimizing and streamlining healthcare operations for improved efficiency and patient care.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-medelevate-accent">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-medelevate-accent">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-medelevate-accent">
+              <a href="https://www.linkedin.com/in/nyleen-flores-ba-fmsp-cpmsm-cpcs-cpco-casc-b525431b9/" className="text-gray-300 hover:text-medelevate-accent">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-medelevate-accent">
-                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -32,7 +23,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white">Accreditation Alignment</a></li>
+              <li>Accreditation Alignment</li>
               <li><a href="#" className="text-gray-300 hover:text-white">EHR Streamlining</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Credentialing</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Best Practices</a></li>
@@ -45,7 +36,6 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white">About Us</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Services</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Case Studies</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Testimonials</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
             </ul>
