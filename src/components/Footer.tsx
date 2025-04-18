@@ -14,7 +14,7 @@ const Footer = () => {
               Healthcare consulting dedicated to optimizing and streamlining healthcare operations for improved efficiency and patient care.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/nyleen-flores-ba-fmsp-cpmsm-cpcs-cpco-casc-b525431b9/" className="text-gray-300 hover:text-medelevate-accent">
+              <a href="https://www.linkedin.com/in/nyleen-flores-ba-fmsp-cpmsm-cpcs-cpco-casc-b525431b9/" target="_blank" className="text-gray-300 hover:text-medelevate-accent">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
