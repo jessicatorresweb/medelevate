@@ -1,9 +1,17 @@
 
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerTrigger,
+  DrawerClose
+} from "@/components/ui/drawer";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Update openConsultationForm to open mailto link for Contact Us button
   const openEmailClient = () => {
@@ -54,11 +62,47 @@ const Navbar = () => {
             </Button>
           </div>
           <div className="md:hidden">
-            <Button variant="ghost">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </Button>
+            <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <DrawerTrigger asChild>
+                <Button variant="ghost">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent className="p-4">
+                <div className="flex flex-col space-y-4 items-center pt-6 pb-8">
+                  <a 
+                    href="#services" 
+                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Services
+                  </a>
+                  <a 
+                    href="#benefits" 
+                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Benefits
+                  </a>
+                  <a 
+                    href="#about" 
+                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    About Us
+                  </a>
+                  <Button 
+                    onClick={() => {
+                      openEmailClient();
+                      setMobileMenuOpen(false);
+                    }} 
+                    className="bg-medelevate-primary hover:bg-medelevate-secondary text-white mt-2"
+                  >
+                    Contact Us
+                  </Button>
+                </div>
+              </DrawerContent>
+            </Drawer>
           </div>
         </div>
       </div>
@@ -67,4 +111,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
