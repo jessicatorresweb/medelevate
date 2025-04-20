@@ -5,8 +5,8 @@ const AboutUs = () => {
   const stats = [
     { 
       icon: <User className="h-8 w-8 text-medelevate-primary mb-3" />, 
-      value: "100+", 
-      label: "Healthcare Clients" 
+      value: "100%", 
+      label: "Certified Medical Professionals" 
     },
     { 
       icon: <Award className="h-8 w-8 text-medelevate-primary mb-3" />, 
