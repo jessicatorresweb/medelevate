@@ -23,7 +23,7 @@ const CeoIntro = () => {
             Healthcare Executive & Marquis Who’s Who Honoree
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            Nyleen Flores is a healthcare executive with over 16 years of experience and passion for healthcare services management. Nyleen is a Marquis Who’s Who honoree for Excellence in Healthcare Administration, a credentialing subject matter expert with experience in private specialty practice management, provider enrollment, surgical center administration and medical staff services management. Her background in healthcare and commitment to operational excellence ensures healthcare facilities provide an exceptional and unique healthcare experience for all patients. Additionally, her experience includes coordinating, evaluating, planning, developing, and improving the credentialing processes for multiple healthcare systems.
+            Nyleen Flores is a healthcare executive with over 20 years of experience and passion for healthcare services management. Nyleen is a Marquis Who’s Who honoree for Excellence in Healthcare Administration, a credentialing subject matter expert with experience in private specialty practice management, provider enrollment, surgical center administration and medical staff services management. Her background in healthcare and commitment to operational excellence ensures healthcare facilities provide an exceptional and unique healthcare experience for all patients. Additionally, her experience includes coordinating, evaluating, planning, developing, and improving the credentialing processes for multiple healthcare systems.
           </p>
           <p className="text-gray-500 mb-2 text-[16px]">
             Volunteer experience includes serving as the Chair of the Subject Matter Expert Subcommittee, Professional Development Council and Leadership Selection Committee for the National Association of Medical Staff Services. Awards have included the Florida Association of Medical Staff Services Mentor of the Year Award.
@@ -35,4 +35,3 @@ const CeoIntro = () => {
 };
 
 export default CeoIntro;
-
