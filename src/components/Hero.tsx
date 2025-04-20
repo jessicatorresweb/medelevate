@@ -11,6 +11,11 @@ const Hero = () => {
     );
   };
 
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById('services');
+    servicesSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative bg-gradient-to-br from-white to-medelevate-light pt-28 pb-20 md:pt-32 md:pb-32">
       <div className="container mx-auto px-4 md:px-6">
@@ -29,7 +34,11 @@ const Hero = () => {
               >
                 Schedule a Consultation
               </Button>
-              <Button variant="outline" className="border-medelevate-primary text-medelevate-primary hover:bg-medelevate-light py-6 px-8 text-lg">
+              <Button 
+                variant="outline" 
+                className="border-medelevate-primary text-medelevate-primary hover:bg-medelevate-light py-6 px-8 text-lg"
+                onClick={scrollToServices}
+              >
                 Learn More <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -53,3 +62,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
