@@ -1,8 +1,27 @@
 
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  
+  // Handle scrolling to sections on the homepage
+  const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    // If not on homepage, navigate to homepage first
+    if (location.pathname !== "/") {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
+    // If already on homepage, scroll to the section
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-medelevate-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
@@ -36,16 +55,16 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-gray-300 hover:text-white">About Us</a>
+                <a href="/#about" onClick={scrollToSection('about')} className="text-gray-300 hover:text-white">About Us</a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-white">Services</a>
+                <a href="/#services" onClick={scrollToSection('services')} className="text-gray-300 hover:text-white">Services</a>
               </li>
               <li>
-                <a href="#ceo" className="text-gray-300 hover:text-white">Meet the CEO</a>
+                <a href="/#ceo" onClick={scrollToSection('ceo')} className="text-gray-300 hover:text-white">Meet the CEO</a>
               </li>
               <li>
-                <a href="#testimonials" className="text-gray-300 hover:text-white">Testimonials</a>
+                <a href="/#testimonials" onClick={scrollToSection('testimonials')} className="text-gray-300 hover:text-white">Testimonials</a>
               </li>
             </ul>
           </div>
