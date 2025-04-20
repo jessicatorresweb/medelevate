@@ -8,6 +8,7 @@ import {
   DrawerClose
 } from "@/components/ui/drawer";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,14 +44,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img 
-              src="/logo2.png" 
-              alt="MedElevate Logo" 
-              className="h-10 mr-4 object-contain"
-            />
-            <a href="#" className="text-2xl font-bold text-medelevate-dark">
+            <Link to="/" className="mr-4 flex items-center">
+              <img 
+                src="/logo2.png" 
+                alt="MedElevate Logo" 
+                className="h-10 object-contain"
+              />
+            </Link>
+            <Link to="/" className="text-2xl font-bold text-medelevate-dark">
               <span className="text-medelevate-primary">Med</span>Elevate Solutions
-            </a>
+            </Link>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
             <a href="#services" className="text-gray-600 hover:text-medelevate-primary font-medium transition-colors">Services</a>
