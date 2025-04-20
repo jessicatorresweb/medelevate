@@ -39,6 +39,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
+            <img 
+              src="/logo2.png" 
+              alt="MedElevate Logo" 
+              className="h-10 mr-4 object-contain"
+            />
             <a href="#" className="text-2xl font-bold text-medelevate-dark">
               <span className="text-medelevate-primary">Med</span>Elevate
             </a>
@@ -65,3 +70,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
