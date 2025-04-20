@@ -1,5 +1,15 @@
 
+import { Button } from "@/components/ui/button";
+
 const CTA = () => {
+  const openConsultationForm = () => {
+    window.open(
+      'https://form.jotform.com/251076529160152',
+      'blank',
+      'scrollbars=yes,toolbar=no,width=700,height=500'
+    );
+  };
+
   return (
     <div className="bg-gradient-to-r from-medelevate-primary to-medelevate-secondary py-16 text-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -10,26 +20,16 @@ const CTA = () => {
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Schedule a free consultation with our healthcare optimization experts to discover how MedElevate Solutions can help your organization thrive.
           </p>
-          <div className="flex justify-center">
-            <iframe
-              id="JotFormIFrame-251076529160152"
-              title="MedElevate Contact Form"
-              onLoad="window.parent.scrollTo(0,0)"
-              allowTransparency="true"
-              allow="geolocation; microphone; camera; fullscreen"
-              src="https://form.jotform.com/251076529160152"
-              frameBorder="0"
-              style={{ minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none' }}
-              scrolling="no"
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button 
+              className="bg-medelevate-dark text-white hover:bg-medelevate-dark/90 text-lg px-8 py-6"
+              onClick={openConsultationForm}
             >
-            </iframe>
+              Schedule Consultation
+            </Button>
           </div>
         </div>
       </div>
-      <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
-      <script dangerouslySetInnerHTML={{ 
-        __html: `window.jotformEmbedHandler("iframe[id='JotFormIFrame-251076529160152']", "https://form.jotform.com/")` 
-      }} />
     </div>
   );
 };
