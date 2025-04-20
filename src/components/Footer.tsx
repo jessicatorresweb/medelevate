@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-medelevate-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">
               <span className="text-medelevate-accent">Med</span>Elevate Solutions
@@ -20,7 +20,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Services</h3>
             <ul className="space-y-3 text-gray-300">
@@ -31,32 +31,7 @@ const Footer = () => {
               <li>Compliance Consulting</li>
             </ul>
           </div>
-          
-          <div>
-            <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><a href="#about" className="text-gray-300 hover:text-white">About Us</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white">Services</a></li>
-              <li><a href="#ceo" className="text-gray-300 hover:text-white">Meet the CEO</a></li>
-              <li><a href="#testimonials" className="text-gray-300 hover:text-white">Testimonials</a></li>
-              <li>
-                <Link to="/privacy-policy" className="text-gray-300 hover:text-white">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/terms-and-conditions" className="text-gray-300 hover:text-white">
-                  Terms and Conditions
-                </Link>
-              </li>
-              <li>
-                <Link to="/cookie-policy" className="text-gray-300 hover:text-white">
-                  Cookie Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
+
           <div>
             <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Contact Us</h3>
             <ul className="space-y-4">
@@ -75,9 +50,26 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
-        <div className="pt-8 border-t border-gray-800 text-center text-gray-400">
+
+        <div className="pt-8 border-t border-gray-800 text-center text-gray-400 flex flex-col md:flex-row md:justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} MedElevate Solutions. All rights reserved.</p>
+          <ul className="flex space-x-6">
+            <li>
+              <Link to="/privacy-policy" className="text-gray-300 hover:text-white">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms-and-conditions" className="text-gray-300 hover:text-white">
+                Terms and Conditions
+              </Link>
+            </li>
+            <li>
+              <Link to="/cookie-policy" className="text-gray-300 hover:text-white">
+                Cookie Policy
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
