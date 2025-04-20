@@ -18,6 +18,18 @@ const Navbar = () => {
     window.location.href = "mailto:admin@medelevatesolutions.com";
   };
 
+  const handleMobileNavClick = (sectionId: string) => {
+    setMobileMenuOpen(false);
+    
+    // Add a small delay to ensure the drawer closes before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -80,27 +92,24 @@ const Navbar = () => {
                   >
                     <X className="h-6 w-6" />
                   </Button>
-                  <a 
-                    href="#services" 
-                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
+                  <button 
+                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2 w-full text-center"
+                    onClick={() => handleMobileNavClick('services')}
                   >
                     Services
-                  </a>
-                  <a 
-                    href="#benefits" 
-                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
+                  </button>
+                  <button 
+                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2 w-full text-center"
+                    onClick={() => handleMobileNavClick('benefits')}
                   >
                     Benefits
-                  </a>
-                  <a 
-                    href="#about" 
-                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
-                    onClick={() => setMobileMenuOpen(false)}
+                  </button>
+                  <button 
+                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2 w-full text-center"
+                    onClick={() => handleMobileNavClick('about')}
                   >
                     About Us
-                  </a>
+                  </button>
                   <Button 
                     onClick={() => {
                       openEmailClient();
@@ -121,4 +130,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
