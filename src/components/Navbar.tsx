@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
@@ -45,7 +44,7 @@ const Navbar = () => {
               className="h-10 mr-4 object-contain"
             />
             <a href="#" className="text-2xl font-bold text-medelevate-dark">
-              <span className="text-medelevate-primary">Med</span>Elevate
+              <span className="text-medelevate-primary">Med</span>Elevate Solutions
             </a>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
@@ -70,4 +69,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
