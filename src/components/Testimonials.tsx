@@ -11,8 +11,8 @@ const Testimonials = () => {
     },
     {
       quote: "Their platform has helped us reduce administrative overhead, improve patient throughput, and ultimately maximize our profitability. MedElevate is  a strategic partner for success.",
-      name: "Mark Thompson",
-      title: "Director of Quality, Community Health System"
+      name: "Lake Oconee Orthopedics",
+      title: ""
     },
     {
       quote: "The credentialing solution implemented by MedElevate reduced our processing time from weeks to days, allowing us to onboard providers faster.",
@@ -41,7 +41,7 @@ const Testimonials = () => {
                 <p className="text-gray-700 mb-6 flex-grow italic">"{testimonial.quote}"</p>
                 <div>
                   <p className="font-semibold text-medelevate-dark">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.title}</p>
+                  {testimonial.title && <p className="text-sm text-gray-600">{testimonial.title}</p>}
                 </div>
               </CardContent>
             </Card>
@@ -53,3 +53,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
