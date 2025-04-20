@@ -1,4 +1,6 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+
+import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +15,7 @@ const Footer = () => {
               Healthcare consulting dedicated to optimizing and streamlining healthcare operations for improved efficiency and patient care.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/nyleen-flores-ba-fmsp-cpmsm-cpcs-cpco-casc-b525431b9/" target="_blank" className="text-gray-300 hover:text-medelevate-accent">
+              <a href="https://www.linkedin.com/in/nyleen-flores-ba-fmsp-cpmsm-cpcs-cpco-casc-b525431b9/" target="_blank" className="text-gray-300 hover:text-medelevate-accent" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -37,7 +39,11 @@ const Footer = () => {
               <li><a href="#services" className="text-gray-300 hover:text-white">Services</a></li>
               <li><a href="#ceo" className="text-gray-300 hover:text-white">Meet the CEO</a></li>
               <li><a href="#testimonials" className="text-gray-300 hover:text-white">Testimonials</a></li>
-              <li><a href="/privacy-policy" className="text-gray-300 hover:text-white">Privacy Policy</a></li>
+              <li>
+                <Link to="/privacy-policy" className="text-gray-300 hover:text-white">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
           
