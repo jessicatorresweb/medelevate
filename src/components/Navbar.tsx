@@ -7,13 +7,12 @@ import {
   DrawerTrigger,
   DrawerClose
 } from "@/components/ui/drawer";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Update openConsultationForm to open mailto link for Contact Us button
   const openEmailClient = () => {
     window.location.href = "mailto:admin@medelevatesolutions.com";
   };
@@ -64,12 +63,20 @@ const Navbar = () => {
           <div className="md:hidden">
             <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <DrawerTrigger asChild>
-                <Button variant="ghost">
+                <Button variant="ghost" aria-label="Open menu">
                   <Menu className="h-6 w-6" />
                 </Button>
               </DrawerTrigger>
               <DrawerContent className="p-4">
-                <div className="flex flex-col space-y-4 items-center pt-6 pb-8">
+                <div className="flex flex-col space-y-4 items-center pt-4 pb-8 relative">
+                  <Button 
+                    variant="ghost" 
+                    className="absolute top-2 right-2" 
+                    onClick={() => setMobileMenuOpen(false)}
+                    aria-label="Close menu"
+                  >
+                    <X className="h-6 w-6" />
+                  </Button>
                   <a 
                     href="#services" 
                     className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2"
@@ -111,3 +118,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
