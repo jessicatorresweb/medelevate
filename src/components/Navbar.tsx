@@ -9,10 +9,12 @@ import {
 } from "@/components/ui/drawer";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const openEmailClient = () => {
     window.location.href = "mailto:admin@medelevatesolutions.com";
@@ -23,11 +25,28 @@ const Navbar = () => {
     
     // Add a small delay to ensure the drawer closes before scrolling
     setTimeout(() => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      scrollToSection(sectionId);
     }, 300);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    // For mobile view, we need to handle this differently
+    const element = document.getElementById(sectionId);
+    if (element) {
+      // Calculate the position to scroll to
+      const offsetPosition = element.offsetTop - 80; // Adjust offset for navbar height
+      
+      // Use window.scrollTo for more reliable scrolling on mobile
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Debug information
+      console.log(`Scrolling to ${sectionId} at position ${offsetPosition}`);
+    } else {
+      console.log(`Element with ID ${sectionId} not found`);
+    }
   };
 
   useEffect(() => {
