@@ -1,15 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-
 const CTA = () => {
-  const openConsultationForm = () => {
-    window.open(
-      'https://form.jotform.com/251076529160152',
-      'blank',
-      'scrollbars=yes,toolbar=no,width=700,height=500'
-    );
-  };
-
   return (
     <div className="bg-gradient-to-r from-medelevate-primary to-medelevate-secondary py-16 text-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -20,13 +10,16 @@ const CTA = () => {
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Schedule a free consultation with our healthcare optimization experts to discover how MedElevate Solutions can help your organization thrive.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button 
-              className="bg-medelevate-dark text-white hover:bg-medelevate-dark/90 text-lg px-8 py-6"
-              onClick={openConsultationForm}
+          <div className="flex justify-center">
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSejREFtCzmIHUETTQMY1ll0ieyp977d31NYGyq_hSbjSLCcGg/viewform?embedded=true" 
+              width="640" 
+              height="824" 
+              className="border-0 w-full max-w-2xl bg-white rounded-lg shadow-lg"
+              title="Contact Form"
             >
-              Schedule Consultation
-            </Button>
+              Loading…
+            </iframe>
           </div>
         </div>
       </div>
