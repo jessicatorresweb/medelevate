@@ -17,7 +17,6 @@ const CTA = () => {
             <script
               type="text/javascript"
               src="https://form.jotform.com/jsform/251076529160152"
-              async
             />
           </div>
         </div>
