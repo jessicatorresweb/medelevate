@@ -10,7 +10,7 @@ const AboutUs = () => {
     },
     { 
       icon: <Award className="h-8 w-8 text-medelevate-primary mb-3" />, 
-      value: "16+", 
+      value: "20+", 
       label: "Years of Experience" 
     },
     { 
