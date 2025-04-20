@@ -11,15 +11,7 @@ const CTA = () => {
             Schedule a free consultation with our healthcare optimization experts to discover how MedElevate Solutions can help your organization thrive.
           </p>
           <div className="flex justify-center">
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSejREFtCzmIHUETTQMY1ll0ieyp977d31NYGyq_hSbjSLCcGg/viewform?embedded=true" 
-              width="640" 
-              height="824" 
-              className="border-0 w-full max-w-2xl bg-white rounded-lg shadow-lg"
-              title="Contact Form"
-            >
-              Loading…
-            </iframe>
+            <script type="text/javascript" src="https://form.jotform.com/jsform/251076529160152"></script>
           </div>
         </div>
       </div>
