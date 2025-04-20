@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">
-              <span className="text-medelevate-accent">Med</span>Elevate
+              <span className="text-medelevate-accent">Med</span>Elevate Solutions
             </h3>
             <p className="text-gray-300 mb-4">
               Healthcare consulting dedicated to optimizing and streamlining healthcare operations for improved efficiency and patient care.
