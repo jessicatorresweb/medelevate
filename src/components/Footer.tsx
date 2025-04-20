@@ -1,3 +1,4 @@
+
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -35,6 +36,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#about" className="text-gray-300 hover:text-white">About Us</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white">Services</a></li>
+              <li><a href="#ceo" className="text-gray-300 hover:text-white">Meet the CEO</a></li>
               <li><a href="#testimonials" className="text-gray-300 hover:text-white">Testimonials</a></li>
             </ul>
           </div>
@@ -67,3 +69,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
