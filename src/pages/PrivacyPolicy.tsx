@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -6,7 +5,7 @@ import Footer from "@/components/Footer";
 const PrivacyPolicy = () => (
   <>
     <Navbar />
-    <main className="min-h-screen bg-white pt-20 pb-12 px-4">
+    <main className="min-h-screen bg-white pt-24 pb-12 px-4">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
         <p className="mb-2 text-gray-600">Effective Date: April 20, 2025</p>
@@ -95,4 +94,3 @@ const PrivacyPolicy = () => (
 );
 
 export default PrivacyPolicy;
-
