@@ -1,5 +1,5 @@
 
-import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
+import { Phone, Mail, Linkedin } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -80,10 +80,6 @@ const Footer = () => {
                 <Mail className="h-5 w-5 mr-3 text-medelevate-accent flex-shrink-0" />
                 <a href="mailto:admin@medelevatesolutions.com">admin@medelevatesolutions.com</a>
               </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-medelevate-accent flex-shrink-0" />
-                <span>Florida/Georgia</span>
-              </li>
             </ul>
           </div>
         </div>
@@ -113,3 +109,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
