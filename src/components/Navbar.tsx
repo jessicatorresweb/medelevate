@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import {
@@ -111,24 +110,6 @@ const Navbar = () => {
                   >
                     <X className="h-6 w-6" />
                   </Button>
-                  <button 
-                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2 w-full text-center"
-                    onClick={() => handleMobileNavClick('services')}
-                  >
-                    Services
-                  </button>
-                  <button 
-                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2 w-full text-center"
-                    onClick={() => handleMobileNavClick('benefits')}
-                  >
-                    Benefits
-                  </button>
-                  <button 
-                    className="text-xl text-gray-600 hover:text-medelevate-primary font-medium transition-colors py-2 w-full text-center"
-                    onClick={() => handleMobileNavClick('about')}
-                  >
-                    About Us
-                  </button>
                   <Button 
                     onClick={() => {
                       openEmailClient();
