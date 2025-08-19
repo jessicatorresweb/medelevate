@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const CeoIntro = () => {
@@ -13,6 +12,18 @@ const CeoIntro = () => {
           />
         </div>
         <div>
+          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400 p-4 mb-6 rounded-lg">
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                <span className="text-yellow-800 font-bold text-sm">★</span>
+              </div>
+              <span className="text-yellow-800 font-bold text-sm uppercase tracking-wide">2025 Award Winner</span>
+            </div>
+            <p className="text-yellow-800 font-semibold">
+              Co-Recipient of the NAMSS Joan Covell-Carpenter Award
+            </p>
+          </div>
+          
           <h3 className="text-medelevate-primary text-lg font-semibold uppercase mb-2 tracking-wide">
             Meet Our CEO
           </h3>
@@ -20,13 +31,14 @@ const CeoIntro = () => {
             Nyleen Flores, BA, FMSP, CPMSM, CPCS, CPCO, CASC
           </h2>
           <p className="text-md text-gray-700 mb-4 font-medium">
-            Healthcare Executive & Marquis Who’s Who Honoree
+            2025 NAMSS Joan Covell-Carpenter Award Co-Recipient<br />
+            Healthcare Executive & Marquis Who's Who Honoree
           </p>
           <p className="text-lg text-gray-600 mb-4">
-            Nyleen Flores is a healthcare executive with over 20 years of experience and passion for healthcare services management. Nyleen is a Marquis Who’s Who honoree for Excellence in Healthcare Administration, a credentialing subject matter expert with experience in private specialty practice management, provider enrollment, surgical center administration and medical staff services management. Her background in healthcare and commitment to operational excellence ensures healthcare facilities provide an exceptional and unique healthcare experience for all patients. Additionally, her experience includes coordinating, evaluating, planning, developing, and improving the credentialing processes for multiple healthcare systems.
+            Nyleen Flores is a distinguished healthcare executive and the co-recipient of the prestigious 2025 NAMSS Joan Covell-Carpenter Award, recognizing her exceptional contributions to medical staff services. With over 20 years of experience and passion for healthcare services management, Nyleen is also a Marquis Who's Who honoree for Excellence in Healthcare Administration. As a credentialing subject matter expert with experience in private specialty practice management, provider enrollment, surgical center administration and medical staff services management, her background in healthcare and commitment to operational excellence ensures healthcare facilities provide an exceptional and unique healthcare experience for all patients. Additionally, her experience includes coordinating, evaluating, planning, developing, and improving the credentialing processes for multiple healthcare systems.
           </p>
           <p className="text-gray-500 mb-2 text-[16px]">
-            Volunteer experience includes serving as the Chair of the Subject Matter Expert Subcommittee, Professional Development Council and Leadership Selection Committee for the National Association of Medical Staff Services. Awards have included the Florida Association of Medical Staff Services Mentor of the Year Award.
+            Recent honors include co-receiving the 2025 NAMSS Joan Covell-Carpenter Award, the most prestigious recognition in medical staff services. Volunteer experience includes serving as the Chair of the Subject Matter Expert Subcommittee, Professional Development Council and Leadership Selection Committee for the National Association of Medical Staff Services. Additional awards have included the Florida Association of Medical Staff Services Mentor of the Year Award.
           </p>
         </div>
       </div>
