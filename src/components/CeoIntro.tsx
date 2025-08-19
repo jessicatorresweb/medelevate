@@ -12,17 +12,24 @@ const CeoIntro = () => {
           />
         </div>
         <div>
-          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400 p-4 mb-6 rounded-lg">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-                <span className="text-yellow-800 font-bold text-sm">★</span>
+          <a 
+            href="https://www.namss.org/Membership/NAMSS-Awards#JCC" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block transition-transform hover:scale-105"
+          >
+            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <span className="text-yellow-800 font-bold text-sm">★</span>
+                </div>
+                <span className="text-yellow-800 font-bold text-sm uppercase tracking-wide">2025 Award Winner</span>
               </div>
-              <span className="text-yellow-800 font-bold text-sm uppercase tracking-wide">2025 Award Winner</span>
+              <p className="text-yellow-800 font-semibold">
+                Co-Recipient of the NAMSS Joan Covell-Carpenter Award
+              </p>
             </div>
-            <p className="text-yellow-800 font-semibold">
-              Co-Recipient of the NAMSS Joan Covell-Carpenter Award
-            </p>
-          </div>
+          </a>
           
           <h3 className="text-medelevate-primary text-lg font-semibold uppercase mb-2 tracking-wide">
             Meet Our CEO
