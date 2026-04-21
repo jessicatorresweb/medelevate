@@ -47,14 +47,9 @@ const CeoIntro = () => {
                 <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Resource</span>
               </div>
               
-              {/* Content row with logo and text */}
+              {/* Content row with text and logo */}
               <div className="flex items-start gap-3">
-                <img
-                  src={credChroniclesLogo}
-                  alt="Credentialing Chronicles logo"
-                  className="w-12 h-12 object-contain flex-shrink-0"
-                />
-                <div>
+                <div className="flex-1">
                   <p className="text-pink-800 font-semibold">
                     Co-Host of Credentialing Chronicles
                   </p>
@@ -62,6 +57,11 @@ const CeoIntro = () => {
                     Visit credentialingchronicles.com for resources & episodes →
                   </p>
                 </div>
+                <img
+                  src={credChroniclesLogo}
+                  alt="Credentialing Chronicles logo"
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
               </div>
             </div>
           </a>
