@@ -4,22 +4,21 @@ import { Mic } from "lucide-react";
 const CeoIntro = () => {
   return (
     <section className="py-20 bg-medelevate-light" id="ceo">
-      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
-        <div className="flex-shrink-0 w-full md:w-[340px] flex justify-center">
+      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-start gap-8 md:gap-16">
+        <div className="flex-shrink-0 w-full md:w-[340px] flex flex-col items-center gap-6">
           <img
             src="/lovable-uploads/ed56e0d3-532a-4050-9d01-37e3eb92e27c.png"
             alt="Nyleen Flores, CEO of MedElevate"
             className="rounded-2xl shadow-xl w-64 h-64 object-cover border-4 border-medelevate-primary bg-white"
           />
-        </div>
-        <div>
-          <a 
-            href="https://www.namss.org/Membership/NAMSS-Awards#JCC" 
-            target="_blank" 
+
+          <a
+            href="https://www.namss.org/Membership/NAMSS-Awards#JCC"
+            target="_blank"
             rel="noopener noreferrer"
-            className="block transition-transform hover:scale-105"
+            className="block w-full transition-transform hover:scale-105"
           >
-            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400 p-4 rounded-lg hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
                   <span className="text-yellow-800 font-bold text-sm">★</span>
@@ -36,9 +35,9 @@ const CeoIntro = () => {
             href="https://credentialingchronicles.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block transition-transform hover:scale-105"
+            className="block w-full transition-transform hover:scale-105"
           >
-            <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-4 rounded-lg hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
                   <Mic className="h-4 w-4 text-white" />
@@ -53,7 +52,8 @@ const CeoIntro = () => {
               </p>
             </div>
           </a>
-          
+        </div>
+        <div>
           <h3 className="text-medelevate-primary text-lg font-semibold uppercase mb-2 tracking-wide">
             Meet Our CEO
           </h3>
