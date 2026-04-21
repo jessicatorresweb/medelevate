@@ -39,19 +39,22 @@ const CeoIntro = () => {
             className="block w-full transition-transform hover:scale-105"
           >
             <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-4 rounded-lg hover:shadow-lg transition-shadow">
+              {/* Header row with mic icon and Resource label */}
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Mic className="h-4 w-4 text-white" />
+                </div>
+                <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Resource</span>
+              </div>
+              
+              {/* Content row with logo and text */}
               <div className="flex items-start gap-3">
                 <img
                   src={credChroniclesLogo}
                   alt="Credentialing Chronicles logo"
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
-                <div className="flex items-center gap-2 flex-shrink-0">
-                  <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
-                    <Mic className="h-4 w-4 text-white" />
-                  </div>
-                  <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Resource</span>
-                </div>
-                <div className="flex-1">
+                <div>
                   <p className="text-pink-800 font-semibold">
                     Co-Host of Credentialing Chronicles
                   </p>
