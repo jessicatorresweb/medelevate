@@ -38,17 +38,17 @@ const CeoIntro = () => {
             rel="noopener noreferrer"
             className="block transition-transform hover:scale-105"
           >
-            <div className="bg-gradient-to-r from-teal-50 to-cyan-50 border-l-4 border-teal-500 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
                   <Mic className="h-4 w-4 text-white" />
                 </div>
-                <span className="text-teal-800 font-bold text-sm uppercase tracking-wide">Resource</span>
+                <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Resource</span>
               </div>
-              <p className="text-teal-800 font-semibold">
+              <p className="text-pink-800 font-semibold">
                 Co-Host of Credentialing Chronicles
               </p>
-              <p className="text-teal-700 text-sm mt-1">
+              <p className="text-pink-700 text-sm mt-1">
                 Visit credentialingchronicles.com for resources & episodes →
               </p>
             </div>
