@@ -1,4 +1,5 @@
 import React from "react";
+import { Mic } from "lucide-react";
 
 const CeoIntro = () => {
   return (
@@ -27,6 +28,28 @@ const CeoIntro = () => {
               </div>
               <p className="text-yellow-800 font-semibold">
                 Co-Recipient of the NAMSS Joan Covell-Carpenter Award
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://credentialingchronicles.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block transition-transform hover:scale-105"
+          >
+            <div className="bg-gradient-to-r from-teal-50 to-cyan-50 border-l-4 border-teal-500 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
+                  <Mic className="h-4 w-4 text-white" />
+                </div>
+                <span className="text-teal-800 font-bold text-sm uppercase tracking-wide">Resource</span>
+              </div>
+              <p className="text-teal-800 font-semibold">
+                Co-Host of Credentialing Chronicles
+              </p>
+              <p className="text-teal-700 text-sm mt-1">
+                Visit credentialingchronicles.com for resources & episodes →
               </p>
             </div>
           </a>

@@ -1,5 +1,5 @@
 
-import { Phone, Mail, Linkedin } from "lucide-react";
+import { Phone, Mail, Linkedin, Mic } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <footer className="bg-medelevate-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">
               <span className="text-medelevate-accent">Med</span>Elevate Solutions
@@ -65,6 +65,23 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/#testimonials" onClick={scrollToSection('testimonials')} className="text-gray-300 hover:text-white">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-lg mb-6 border-b border-gray-700 pb-2">Resources</h3>
+            <ul className="space-y-3 text-gray-300">
+              <li>
+                <a
+                  href="https://credentialingchronicles.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-medelevate-accent inline-flex items-center gap-2"
+                >
+                  <Mic className="h-4 w-4" />
+                  Credentialing Chronicles
+                </a>
               </li>
             </ul>
           </div>
