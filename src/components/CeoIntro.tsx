@@ -71,7 +71,7 @@ const CeoIntro = () => {
             Meet Our CEO
           </h3>
           <h2 className="text-3xl md:text-4xl font-extrabold text-medelevate-dark mb-4">
-            Nyleen Flores, BA, FMSP, CPMSM, CPCS, CPCO, CASC
+            Nyleen Flores, BA, FMSP, CPMSM, CPCS, CPES, CPCO, CASC
           </h2>
           <p className="text-md text-gray-700 mb-4 font-medium">
             2025 NAMSS Joan Covell-Carpenter Award Co-Recipient<br />
