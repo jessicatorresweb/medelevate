@@ -1,5 +1,6 @@
 import React from "react";
 import { Mic } from "lucide-react";
+import credChronLogo from "@/assets/credentialing-chronicles-logo.png";
 
 const CeoIntro = () => {
   return (
@@ -39,9 +40,9 @@ const CeoIntro = () => {
             className="block transition-transform hover:scale-105"
           >
             <div className="bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-500 p-4 mb-6 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
-                  <Mic className="h-4 w-4 text-white" />
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm border border-pink-200">
+                  <img src={credChronLogo} alt="Credentialing Chronicles logo" className="h-7 w-7 object-contain" />
                 </div>
                 <span className="text-pink-700 font-bold text-sm uppercase tracking-wide">Resource</span>
               </div>
